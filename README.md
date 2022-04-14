@@ -7,7 +7,7 @@ Raspberry Pi Media Stack
 + [transmission](https://github.com/transmission/transmission)
 + [sonarr](https://github.com/Sonarr/Sonarr)
 + [radarr](https://github.com/Radarr/Radarr)
-+ [ombi](https://github.com/Ombi-app/Ombi)
++ [overseerr](https://github.com/sct/overseerr)
 + [homeassistant](https://github.com/home-assistant/core)
 + [prometheus](https://github.com/prometheus/prometheus)
 + [node-exporter](https://github.com/prometheus/node_exporter)
