@@ -87,7 +87,7 @@ services:
       - PGID=100
       - TZ=Europe/Minsk
     volumes:
-      - /srv/dev-disk-by-uuid-595b77af-d35a-4657-b1f5-aaf49c5bc4f4/Configs/overseerr:/config
+      - /srv/dev-disk-by-uuid-595b77af-d35a-4657-b1f5-aaf49c5bc4f4/Configs/overseerr:/app/config
     ports:
       - 5055:5055
     restart: unless-stopped
