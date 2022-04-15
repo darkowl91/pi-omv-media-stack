@@ -17,7 +17,6 @@ services:
       - '--web.enable-lifecycle'
     volumes:
       - ${VOLUME_PATH}/Configs/Prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
-      - ${VOLUME_PATH}/Data/Prometheus:/prometheus
     ports:
       - "9292:9090"
     restart: unless-stopped
