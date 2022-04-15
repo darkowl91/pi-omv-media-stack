@@ -10,7 +10,7 @@ services:
       - TZ=${TIME_ZONE}
       - UMASK_SET=022
     volumes:
-      - ${VOLUME_PATH}/Data/Grafana:/var/lib/grafana
+      - ${VOLUME_PATH}/Configs/Grafana:/var/lib/grafana
     ports:
       - "3000:3000"
     restart: unless-stopped
