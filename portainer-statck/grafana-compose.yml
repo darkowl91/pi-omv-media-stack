@@ -8,7 +8,6 @@ services:
       - PUID=${PUID}
       - PGID=${PGID}
       - TZ=${TIME_ZONE}
-      - UMASK_SET=022
     volumes:
       - ${VOLUME_PATH}/Configs/Grafana:/var/lib/grafana
     ports:
