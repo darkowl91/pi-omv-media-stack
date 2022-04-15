@@ -1,0 +1,17 @@
+---
+version: "3"
+services:
+  homeassistant:
+    image: ghcr.io/home-assistant/home-assistant:stable
+    container_name: homeassistant
+    environment:
+      - DISABLE_JEMALLOC=true
+      - PUID=${PUID}
+      - PGID=${PGID}
+      - TZ=${TIME_ZONE}
+    volumes:
+      - ${VOLUME_PATH}/Configs/Homeassistant:/config
+      - /etc/localtime:/etc/localtime:ro
+    ports:
+      - "8123:8123"
+    restart: unless-stopped

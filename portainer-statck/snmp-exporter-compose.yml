@@ -1,0 +1,13 @@
+---
+version: "3"
+services:
+  node-exporter:
+    image: quay.io/prometheus/node-exporter
+    container_name: mikrotik-snmp-exporter
+    environment:
+      - PUID=${PUID}
+      - PGID=${PGID}
+      - TZ=${TIME_ZONE}
+    ports:
+      - "9116:9116"
+    restart: unless-stopped

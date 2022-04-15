@@ -1,0 +1,19 @@
+---
+version: "3"
+services:
+  node-exporter:
+    image: quay.io/prometheus/node-exporter
+    container_name: node-exporter
+    network_mode: host
+    environment:
+      - PUID=${PUID}
+      - PGID=${PGID}
+      - TZ=${TIME_ZONE}
+      - UMASK_SET=022
+    command:
+      - '--path.rootfs=/host'
+    volumes:
+      - /:/host:ro,rslave
+    ports:
+      - "9100:9090"
+    restart: unless-stopped

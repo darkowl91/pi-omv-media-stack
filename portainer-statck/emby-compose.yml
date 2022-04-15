@@ -1,0 +1,20 @@
+---
+version: "3"
+services:
+  emby:
+    image: lscr.io/linuxserver/emby
+    container_name: emby
+    environment:
+      - PUID=${PUID}
+      - PGID=${PGID}
+      - UMASK_SET=022
+      - TZ=${TIME_ZONE}
+    volumes:
+      - ${VOLUME_PATH}/Configs/Emby:/config
+      - ${VOLUME_PATH}/TV:/data/tvshows
+      - ${VOLUME_PATH}/Movies:/data/movies
+      - ${VOLUME_PATH}/Photos:/data/photos
+      - /etc/localtime:/etc/localtime:ro
+    ports:
+      - "8096:8096"
+    restart: unless-stopped

@@ -1,0 +1,18 @@
+---
+version: "3"
+services:
+  transmission:
+    image: lscr.io/linuxserver/transmission
+    container_name: transmission
+    environment:
+      - PUID=${PUID}
+      - PGID=${PGID}
+      - TZ=${TIME_ZONE}
+    volumes:
+      - ${VOLUME_PATH}/Configs/Transmission:/config
+      - ${VOLUME_PATH}/Torrents:/downloads
+    ports:
+      - "9091:9091"
+      - "51413:51413"
+      - "51413:51413/udp"
+    restart: unless-stopped
