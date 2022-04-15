@@ -2,7 +2,7 @@
 version: "3"
 services:
   grafana:
-    image: proxx/grafana-armv7
+    image: grafana/grafana:8.4.6
     container_name: grafana
     environment:
       - PUID=${PUID}
