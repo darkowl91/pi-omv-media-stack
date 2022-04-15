@@ -2,7 +2,7 @@
 
 Raspberry Pi portainer-stack running on openmediavault ext
 
-+ [emby](https://github.com/MediaBrowser/Emby)
++ [jellyfin](https://github.com/jellyfin/jellyfin)
 + [jackett](https://github.com/Jackett/Jackett)
 + [transmission](https://github.com/transmission/transmission)
 + [sonarr](https://github.com/Sonarr/Sonarr)
