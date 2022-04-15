@@ -3,11 +3,7 @@ version: "3"
 services:
   node-exporter:
     image: mashinkopochinko/snmp_exporter_mikrotik
-    container_name: mikrotik-snmp-exporter
-    environment:
-      - PUID=${PUID}
-      - PGID=${PGID}
-      - TZ=${TIME_ZONE}
+    container_name: snmp-exporter
     ports:
       - "9116:9116"
     restart: unless-stopped
