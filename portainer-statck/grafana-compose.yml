@@ -12,5 +12,5 @@ services:
     volumes:
       - ${VOLUME_PATH}/Data/Grafana:/var/lib/grafana
     ports:
-      - "9000:3000"
+      - "3000:3000"
     restart: unless-stopped
