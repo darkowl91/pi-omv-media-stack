@@ -1,14 +1,14 @@
-# pi-omv-media-stack
+# pi-omv-stack
 
-Raspberry Pi Media Stack
+Raspberry Pi portainer-stack running on openmediavault ext
 
 + [emby](https://github.com/MediaBrowser/Emby)
 + [jackett](https://github.com/Jackett/Jackett)
 + [transmission](https://github.com/transmission/transmission)
 + [sonarr](https://github.com/Sonarr/Sonarr)
 + [radarr](https://github.com/Radarr/Radarr)
-+ [overseerr](https://github.com/sct/overseerr)
 + [homeassistant](https://github.com/home-assistant/core)
 + [prometheus](https://github.com/prometheus/prometheus)
 + [node-exporter](https://github.com/prometheus/node_exporter)
++ [snmp-exporter](https://github.com/IgorKha/Grafana-Mikrotik)
 + [grafana](https://github.com/grafana/grafana)

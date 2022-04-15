@@ -2,7 +2,7 @@
 version: "3"
 services:
   node-exporter:
-    image: quay.io/prometheus/node-exporter
+    image: mashinkopochinko/snmp_exporter_mikrotik
     container_name: mikrotik-snmp-exporter
     environment:
       - PUID=${PUID}
