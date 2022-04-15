@@ -2,7 +2,7 @@
 version: "3"
 services:
   grafana:
-    image: hassioaddons/grafana-armv7
+    image: proxx/grafana-armv7
     container_name: grafana
     environment:
       - PUID=${PUID}
