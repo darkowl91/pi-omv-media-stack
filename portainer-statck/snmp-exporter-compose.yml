@@ -2,7 +2,7 @@
 version: "3"
 services:
   node-exporter:
-    image: darkowl91/snmp_exporter_mikrotik
+    image: darkowl91/snmp_exporter_mikrotik # snmp exporter armv7 linux
     container_name: snmp-exporter
     ports:
       - "9116:9116"
