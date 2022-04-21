@@ -2,7 +2,7 @@
 version: "3"
 services:
   node-exporter:
-    image: mashinkopochinko/snmp_exporter_mikrotik
+    image: darkowl91/snmp_exporter_mikrotik
     container_name: snmp-exporter
     ports:
       - "9116:9116"
