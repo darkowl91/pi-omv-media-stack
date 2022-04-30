@@ -11,6 +11,7 @@ services:
     volumes:
       - ${VOLUME_PATH}/Configs/Sonarr:/config
       - ${VOLUME_PATH}/Movies:/tv
+      - ${VOLUME_PATH}/Movies:/movies
       - ${VOLUME_PATH}/Torrents:/downloads
       - /etc/localtime:/etc/localtime:ro
     ports:
