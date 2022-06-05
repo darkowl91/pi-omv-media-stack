@@ -26,3 +26,10 @@ scrape_configs:
         target_label: instance
       - target_label: __address__
         replacement: 192.168.88.248:9116  # The SNMP exporter's real hostname:port.
+  - job_name: 'octoprint'
+    static_configs:
+      - targets: ['192.168.88.215:80']
+    scrape_interval: 5s
+    metrics_path: '/plugin/prometheus_exporter/metrics'
+    params:
+      apikey: ['__API_KEY__']
